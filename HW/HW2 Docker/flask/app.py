@@ -16,13 +16,13 @@ def hello():
 @app.route('/repeat', methods=['GET'])
 def repeat():
     user_input = request.args.get('input', '')
-    response = jsonify(
+    repeat_response = jsonify(
         {
             'body': user_input,
             'status': 200
         }
     )
-    return response
+    return repeat_response
 
     
 if __name__ == '__main__':
