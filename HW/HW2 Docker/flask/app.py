@@ -1,4 +1,4 @@
-from flask import Flask, make_response
+from flask import Flask, request, make_response
 import os
 
 app = Flask(__name__)
@@ -13,6 +13,18 @@ def hello():
     )
     return response
 
+@app.route('/repeat', methods=['GET'])
+def repeat():
+    user_input = request.args.get('input', '')
+    response = jsonify(
+        {
+            'body': user_input,
+            'status': 200
+        }
+    )
+    return response
+
+    
 if __name__ == '__main__':
     # By default flask is only accessible from localhost.
     # Set this to '0.0.0.0' to make it accessible from any IP address
