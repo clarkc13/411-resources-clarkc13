@@ -13,6 +13,18 @@ def hello():
     )
     return response
 
+@app.route('/health')
+@app.route('/healthcheck')
+def health():
+   health_response = make_response(
+        {
+            'body': 'OK',
+            'status': 200
+        }
+    )
+    return health_response
+
+
 @app.route('/repeat', methods=['GET'])
 def repeat():
     user_input = request.args.get('input', '')
