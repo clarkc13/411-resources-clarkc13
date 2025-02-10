@@ -22,7 +22,7 @@ def health():
             'status': 200
         }
     )
-    return health_response
+   return health_response
 
 
 @app.route('/repeat', methods=['GET'])
