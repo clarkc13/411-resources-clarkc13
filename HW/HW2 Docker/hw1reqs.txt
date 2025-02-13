@@ -1,0 +1,53 @@
+Complete the following tasks:
+Complete these user stories:
+As a vanilla git power-user that has never seen GiggleGit before, I want to…
+As a vanilla git power-user that has never seen GiggleGit before, I want to understand the unique features of this version control system that distinguish it from standard Git so that I can evaluate whether or not switching systems is worthwhile.
+As a team lead onboarding an experienced GiggleGit user, I want to…
+As a team lead onboarding an experienced GiggleGit user, I want to provide a structured onboarding guide tailored to my team’s workflow and collaboration methods (to which the experienced user can later refer back if needed) so that the process of integrating new members is efficient and effective.
+
+Create a third user story, one task for this user story, and two associated tickets.
+Tasks should be a single phrase. (As should themes and epics. See those provided.)
+User stories should be one to three sentences.
+Tickets should have a title consisting of a single phrase and details that are long enough to sufficiently describe what needs to be done. You do not need to assign points to the tickets
+User story: As a user who is completely new to version control, I want to first understand the basic Git-like features of GiggleGit before learning its advanced, unique functionalities.
+Task: Create an introductory guide for GiggleGit basics
+Ticket 1: Develop written documentation for GiggleGit basics
+Create a written guide explaining fundamental version control concepts (e.g. branches, commits) using GiggleGit. 
+Ensure that it is easy to follow for users without prior Git experience
+Ticket 2: Develop an interactive tutorial for first-time users
+Implement an onboarding tutorial that walks users through basic GiggleGit commands in a hands-on manner before more advanced features are introduced
+Include short videos and interactive exercises in which new users can apply what they’ve learned thus far
+
+This is not a user story. Why not? What is it?
+As a user I want to be able to authenticate on a new machine
+This is not a user story because it does not characterize a specific kind of user. It also fails to specify a clear goal for the user, or some way in which the described feature would benefit them. This is a functional requirement for a product.
+
+List one goal and one non-goal
+
+Goal: Evaluate how SnickerSync impacts user efficiency compared to a standard merge tool by examining task completion time, error rates, and user satisfaction.
+Non-goal: The study will not focus on making SnickerSync fully compatible with all Git workflows; the main objective is to evaluate the tool’s performance against a standard merge tool.
+
+Create two non-functional requirements. Here are suggestions of things to think about:
+Who has access to what
+PMs need to be able to maintain the different snickering concepts
+A user study needs to have random assignments of users between control groups and variants
+
+Non-functional requirement 1: Only authorized PMs should have access to modify SnickerSync settings.
+
+Nonfunctional requirement 2: A random assignment mechanism should be implemented in the system so that users are distributed evenly between control groups and variants to ensure unbiased results.
+
+
+
+For each non-functional requirement, create two functional requirements (for a grand total of four functional requirements).
+
+Non-functional requirement 1: Only authorized PMs should have access to modify SnickerSync settings.
+Functional requirement 1: Authorized editor verification
+The system must verify that the user is authorized to make changes before granting access to SnickerSync’s settings.
+Functional requirement 2: SnickerSync edit history
+The system must log all modifications to SnickerSync settings, including the author, time, and description of each change.
+
+Nonfunctional requirement 2: A random assignment mechanism should be implemented in the system so that users are distributed evenly between control groups and variants to ensure unbiased results.
+Functional requirement 1: User assignment
+The system must assign each user to a control group or a variant using a randomized process.
+Functional requirement 2: Random assignment data
+The system must generate a report with the random assignment statistics in order to ensure fairness in the study
